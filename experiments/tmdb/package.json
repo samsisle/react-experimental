@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^12.1.2",
     "history": "^5.0.0",
     "prop-types": "^15.7.2",
-    "react": "0.0.0-experimental-3d0895557",
+    "react": "0.0.0-experimental-94c0244ba",
     "react-dom": "0.0.0-experimental-3d0895557",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
