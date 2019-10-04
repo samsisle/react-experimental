@@ -8734,10 +8734,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@0.0.0-experimental-3d0895557:
-  version "0.0.0-experimental-3d0895557"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-3d0895557.tgz#0c6c95681bf93e023f74a5448f2261ba99b41c01"
-  integrity sha512-/5nwNTI6QypTthi9rRbf74i/ac6UTf3syRrgJpkzV52470aNlF+Qq6D6e7kFiPpcfh3A/V6vnMCPtmB/rNnElA==
+react@^0.0.0-experimental-94c0244ba:
+  version "0.0.0-experimental-94c0244ba"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-94c0244ba.tgz#eb63ece3eadcf231845b6ec9c4a8c1829ddcc1fe"
+  integrity sha512-67fLM+CA1w96JM0Ju5dv9lE3q1qSxVAi1iAOOyhXddhQJfs85bAJNM+gEMPBKbrhbhJGyHL1mLh1xqpOzokQ4w==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
