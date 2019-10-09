@@ -4932,13 +4932,6 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-history@5.0.0-beta.4:
-  version "5.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/history/-/history-5.0.0-beta.4.tgz#7fd3bb1f6c75d00d9b5112a816766bfc72d1a3cd"
-  integrity sha512-LMUnKPB5UlEzDF1BO0VxtDsrguGPO7SuQEmB/5OjL1305afR1O8FvX29rbJep4g2SLmKK3YdDA7+8ZDs8P8n8g==
-  dependencies:
-    "@babel/runtime" "^7.7.6"
-
 history@5.0.0-beta.9, history@^5.0.0-beta.9:
   version "5.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/history/-/history-5.0.0-beta.9.tgz#fe230706c18c5f7f132001e55215e71b4aaab6d6"
@@ -8694,12 +8687,12 @@ react-router-dom@^6.0.0-alpha.4:
     history "5.0.0-beta.9"
     prop-types "^15.7.2"
 
-react-router@^6.0.0-alpha.3:
-  version "6.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.0.0-alpha.3.tgz#c031a5262801315571f8b609620ae9c1b083dee3"
-  integrity sha512-Evp8ua5c7rFDIuF0KK/tkzbh7aPIWWyjWKr3yOLNine1liiphHZidDL/5jLTBjE9HN0/vdCZPuV2VWjZ82TShA==
+react-router@^6.0.0-alpha.4:
+  version "6.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.0.0-alpha.4.tgz#ab54f5e00b36c6f02571d3cca6b90e3422c924b3"
+  integrity sha512-UZdelX0qUxc8X2737nX4bOlgjLpSKE/aKjwZWf3IgB66oqh78YtyZ7msacnYtwe0403eixZzZtAwxcldpFT9xA==
   dependencies:
-    history "5.0.0-beta.4"
+    history "5.0.0-beta.9"
     prop-types "^15.7.2"
 
 react-scripts@3.4.1:
