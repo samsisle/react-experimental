@@ -65,7 +65,7 @@ function Button(props) {
   const buttonEl = useRef(null);
 
   const { unOrderedListRef, xAxis, top, left, right } = props;
-  const L_Boolean = props.orientation === 'L';
+  const L_Boolean = Object.is(props.orientation, 'L');
 
   useEffect(() => {
     function showButtons() {
