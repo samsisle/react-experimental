@@ -1,0 +1,19 @@
+.container {
+  max-width: 66rem;
+  width: 100%;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.06);
+  background-image: url(../../lib/search-icon.png);
+  background-position: 1rem 0.8rem;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  height: 3.6rem;
+  outline: none;
+  padding: 0.7rem 6.1rem 0.7rem 3.6rem;
+  width: 100%;
+}

@@ -1,5 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import css from './Search.module.css';
 
 export default function Search() {
-  return <div></div>;
+  const [search, setSearch] = useState('');
+
+  function handleSearchChange() {}
+
+  return (
+    <div className={css.container}>
+      <input className={css.input} placeholder="Search TMDb" />
+    </div>
+  );
 }
