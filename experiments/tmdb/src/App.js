@@ -17,6 +17,10 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 export default function App() {
+  // TODO: Add Error boundaries in location of Suspense boundaries
+  // TODO: The <Header /> needs to still show when the Movie Page is loading,
+  //       so move <Suspense to only cover that route
+
   return (
     <Suspense fallback={<Spinner />}>
       <Header />
