@@ -18,6 +18,8 @@ export default function Movie() {
     { suspense: true }
   );
 
+  document.title = `${data.title} (${data.release_date.slice(0, 4)})`;
+
   return (
     <MovieContext.Provider value={{ movie: data, movieId: movieId }}>
       <main style={{ margin: '0 auto', width: '95%' }}>
@@ -25,6 +27,7 @@ export default function Movie() {
         <Content />
         <Videos />
       </main>
+      //{' '}
     </MovieContext.Provider>
   );
 }
