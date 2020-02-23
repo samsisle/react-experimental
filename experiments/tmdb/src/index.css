@@ -27,8 +27,14 @@ body {
 }
 
 header {
-  padding-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 104rem;
+  padding-bottom: 1.4rem;
   padding-top: 2.8rem;
+  width: 90%;
 }
 
 footer {
