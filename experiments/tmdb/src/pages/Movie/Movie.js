@@ -22,12 +22,11 @@ export default function Movie() {
 
   return (
     <MovieContext.Provider value={{ movie: data, movieId: movieId }}>
-      <main style={{ margin: '0 auto', width: '95%' }}>
+      <main style={{ margin: '1.4rem auto 0', width: '95%' }}>
         <Backdrop />
         <Content />
         <Videos />
       </main>
-      //{' '}
     </MovieContext.Provider>
   );
 }
