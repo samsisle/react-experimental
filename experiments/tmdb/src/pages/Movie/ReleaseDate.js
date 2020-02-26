@@ -5,8 +5,8 @@ import { months, convertToOrdinal } from '../../lib/calendar';
 import css from './css/Info.module.css';
 
 export default function ReleaseDate(props) {
-  function formatTimestamp(releaseDate) {
-    const t = releaseDate.slice(0, 10);
+  function formatTimestamp(timestamp) {
+    const t = timestamp.slice(0, 10);
 
     const month = months[Number(t.slice(5, 7)) - 1];
     const day = convertToOrdinal(t.slice(-2));
@@ -18,7 +18,7 @@ export default function ReleaseDate(props) {
   return (
     <li className={css.info}>
       <span className={css.credits}>Release</span>
-      {formatTimestamp(props.releaseDate)}
+      {formatTimestamp(props.timestamp)}
     </li>
   );
 }

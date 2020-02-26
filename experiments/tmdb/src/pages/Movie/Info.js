@@ -10,7 +10,7 @@ import { MovieContext } from './MovieContext';
 import css from './css/Info.module.css';
 
 export default function Info() {
-  const [releaseDate, setReleaseDate] = useState('');
+  const [timestamp, setTimestamp] = useState('');
   const [certification, setCertfication] = useState('');
 
   const { movieId } = useContext(MovieContext);
@@ -32,7 +32,7 @@ export default function Info() {
         [3, 2, 1].includes(date.type)
       );
 
-      setReleaseDate(official_release.release_date);
+      setTimestamp(official_release.release_date);
       setCertfication(official_release.certification);
     }
 
@@ -52,7 +52,7 @@ export default function Info() {
           />
         </li>
       ) : null}
-      <ReleaseDate releaseDate={releaseDate} />
+      <ReleaseDate timestamp={timestamp} />
       <Runtime />
     </ul>
   );
