@@ -31,11 +31,8 @@ export default function Poster(props) {
           onClick={navigateToMoviePage}
         />
       ) : (
-        <div
-          className={`${css.empty} ${css.poster}`}
-          onClick={navigateToMoviePage}
-        >
-          <h4 className="highlight">
+        <div className={css.poster} onClick={navigateToMoviePage}>
+          <h4 className={css.title}>
             {props.title} ({props.releaseYear})
           </h4>
         </div>
