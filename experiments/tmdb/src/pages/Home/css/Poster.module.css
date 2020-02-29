@@ -1,4 +1,8 @@
 .poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
   cursor: pointer;
@@ -6,4 +10,12 @@
   margin-left: 1rem;
   margin-right: 1rem;
   width: 15.6rem;
+}
+
+.title {
+  color: var(--bg);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 1.5rem;
+  text-align: center;
 }
