@@ -8,8 +8,8 @@
 
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import { SWRConfig } from 'swr';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { SWRConfig } from 'swr';
 
 import App from './App';
 
