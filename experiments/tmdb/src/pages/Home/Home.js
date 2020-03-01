@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react';
 
-import PostersPlaceholder from './PostersPlaceholder';
+import { PostersPlaceholder } from '../../components/Poster';
 import NowPlaying from './NowPlaying';
 import Upcoming from './Upcoming';
 
-import css from './css/Home.module.css';
+import css from './Home.module.css';
 
 export default function Home() {
   return (

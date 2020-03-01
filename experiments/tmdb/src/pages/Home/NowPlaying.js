@@ -2,7 +2,7 @@ import React from 'react';
 import useSwr from 'swr';
 
 import { Carousel } from '../../components/Carousel';
-import Poster from './Poster';
+import { Poster } from '../../components/Poster';
 
 export default function NowPlaying() {
   const {
