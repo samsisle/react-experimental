@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import css from './css/Poster.module.css';
+import css from './Poster.module.css';
 
 export default function Poster(props) {
   const navigate = useNavigate();

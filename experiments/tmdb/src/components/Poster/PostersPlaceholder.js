@@ -1,6 +1,6 @@
 import React from 'react';
 
-import css from './css/PostersPlaceholder.module.css';
+import css from './PostersPlaceholder.module.css';
 
 export default function PostersPlaceholder() {
   return (
