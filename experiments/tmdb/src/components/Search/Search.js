@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import SearchIcon from './SearchIcon';
+
 import css from './Search.module.css';
 
 export default function Search() {
@@ -11,6 +13,9 @@ export default function Search() {
 
   return (
     <div className={css.container}>
+      <div>
+        <SearchIcon />
+      </div>
       <input
         className={css.input}
         onChange={handleSearchChange}
