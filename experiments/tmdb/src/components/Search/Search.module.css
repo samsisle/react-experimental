@@ -7,6 +7,8 @@
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   height: 4.8rem;
   outline: none;
+  padding-left: 1.2rem;
+  padding-right: 0.4rem;
   transition: box-shadow 200ms ease-in;
   width: 100%;
 }
@@ -16,9 +18,20 @@
     0 0.4rem 1.2rem rgba(26, 26, 29, 0.08);
 }
 
+.icon {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+}
+
 .input {
   border: none;
-  color: var(--secondary);
-  font-size: 1.7rem;
+  color: var(--header);
+  font-size: 1.8rem;
   font-weight: 700;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
 }

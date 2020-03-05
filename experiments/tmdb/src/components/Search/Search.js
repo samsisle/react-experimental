@@ -13,13 +13,13 @@ export default function Search() {
 
   return (
     <div className={css.container}>
-      <div>
+      <div className={css.icon}>
         <SearchIcon />
       </div>
       <input
         className={css.input}
         onChange={handleSearchChange}
-        placeholder="Search TMDb"
+        placeholder="Search TMDb..."
         value={search}
       />
     </div>
