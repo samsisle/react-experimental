@@ -14,7 +14,7 @@ export default function Info() {
   const [certification, setCertfication] = useState('');
 
   const { movieId } = useContext(MovieContext);
-  const imgSrc = require(`../../lib/RATED_${certification}.svg`);
+  const imgSrc = require(`../../lib/certifications/RATED_${certification}.svg`);
 
   const { data: releases } = useSwr(
     `https://api.themoviedb.org/3/movie/${movieId}/release_dates`,
