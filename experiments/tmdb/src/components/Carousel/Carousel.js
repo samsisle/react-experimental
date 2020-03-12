@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import leftArrow from '../../lib/arrow-left-bold.svg';
@@ -63,6 +64,7 @@ export default function Carousel(props) {
 function Button(props) {
   const [show, setShow] = useState(false);
   const buttonEl = useRef(null);
+  const { pathname } = useLocation();
 
   const { unOrderedListRef, xAxis, top, left, right } = props;
   const L_Boolean = Object.is(props.orientation, 'L');
@@ -98,7 +100,7 @@ function Button(props) {
       showButtons();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [xAxis]);
+  }, [xAxis, pathname]);
 
   function scroll() {
     // scroll width; total width of Carousel
