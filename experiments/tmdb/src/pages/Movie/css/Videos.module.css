@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 0.5rem;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-card);
   cursor: pointer;
   height: 12.85rem;
   margin: 0rem 1rem 0.5rem 1rem;

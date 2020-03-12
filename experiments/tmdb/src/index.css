@@ -4,7 +4,7 @@
   --primary: #16191c;
   --secondary: rgba(0, 0, 0, 0.6);
   --tertiary: rgba(0, 0, 0, 0.4);
-  --shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
   --header: #484848;
 }
 
