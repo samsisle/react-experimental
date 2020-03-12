@@ -14,7 +14,6 @@ export default function Search() {
   const expandClassName = `${toggle ? ' ' : ''}${toggle ? css.expand : ''}`;
 
   useEffect(() => {
-    console.log('effect ran!');
     function handleClickOutside(e) {
       if (containerRef.current && containerRef.current.contains(e.target)) {
         set(true);
