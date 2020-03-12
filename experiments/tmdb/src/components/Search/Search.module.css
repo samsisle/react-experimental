@@ -1,7 +1,16 @@
 .container {
+  position: relative;
+  transition: box-shadow 200ms ease-in, width 200ms ease-in 0s;
+  width: 46rem;
+}
+
+.expand {
+  width: 60rem;
+}
+
+.search {
   display: flex;
   align-items: center;
-  width: 46rem;
   border: 0.1rem solid #ebebeb;
   border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -9,16 +18,15 @@
   outline: none;
   padding-left: 1.2rem;
   padding-right: 0.4rem;
-  transition: box-shadow 200ms ease-in, width 200ms ease-in 0s;
 }
 
-.container:hover {
+.search:hover {
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1),
     0 0.4rem 1.2rem rgba(26, 26, 29, 0.08);
 }
 
-.expand {
-  width: 60rem;
+.border {
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
 .icon {
@@ -37,4 +45,25 @@
 
 .input:focus {
   outline: none;
+}
+
+.results {
+  position: absolute;
+  background-color: transparent;
+  border-color: var(--border);
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  height: 48rem;
+  top: 4.7rem;
+  transition: background-color 200ms linear;
+  visibility: hidden;
+  width: 100%;
+  z-index: 21;
+}
+
+.visible {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(26, 26, 29, 0.3) 0rem 1.5rem 4.6rem -1rem;
+  visibility: visible;
 }
