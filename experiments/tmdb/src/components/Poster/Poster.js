@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import formatTitle from '../../lib/formatTitle';
+
 import css from './Poster.module.css';
 
 export default function Poster(props) {
@@ -8,17 +10,6 @@ export default function Poster(props) {
 
   function navigateToMoviePage() {
     navigate(`/${props.movieId}/${formatTitle(props.title)}`);
-  }
-
-  function formatTitle(s) {
-    const formattedTitle = s.toLowerCase().replace(/\W+/g, '_');
-    // Some movie titles end in parentheses. For example,
-    // Birds of Prey (And the Fantabulous Emancipation of One Harley Quinn)
-    if (formattedTitle.charAt(formattedTitle.length - 1) === '_') {
-      return formattedTitle.slice(0, -1);
-    } else {
-      return formattedTitle;
-    }
   }
 
   return (
