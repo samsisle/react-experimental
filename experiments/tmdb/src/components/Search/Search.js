@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import SearchIcon from './SearchIcon';
+import Result from './Result';
 
 import fetch from '../../lib/fetch';
 
@@ -10,7 +11,7 @@ export default function Search() {
   const [toggle, set] = useState(false);
   const [search, setSearch] = useState('');
   const [results, setResults] = useState([]);
-  const searchRef = useRef(null);
+  const containerRef = useRef(null);
 
   const expandClassName = `${toggle ? ' ' : ''}${toggle ? css.expand : ''}`;
   const borderClassName = `${toggle ? ' ' : ''}${toggle ? css.border : ''}`;
@@ -18,7 +19,7 @@ export default function Search() {
 
   useEffect(() => {
     function handleClickOutside(e) {
-      if (searchRef.current && searchRef.current.contains(e.target)) {
+      if (containerRef.current && containerRef.current.contains(e.target)) {
         set(true);
       } else {
         set(false);
@@ -30,7 +31,7 @@ export default function Search() {
       // Unbind the event listener on clean up
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [searchRef]);
+  }, [containerRef]);
 
   useEffect(() => {
     async function fetchSearch(query) {
@@ -56,8 +57,8 @@ export default function Search() {
   }
 
   return (
-    <div className={`${css.container}${expandClassName}`}>
-      <div className={`${css.search}${borderClassName}`} ref={searchRef}>
+    <div className={`${css.container}${expandClassName}`} ref={containerRef}>
+      <div className={`${css.search}${borderClassName}`}>
         <div className={css.icon}>
           <SearchIcon />
         </div>
@@ -72,7 +73,14 @@ export default function Search() {
         {results.length > 0 && (
           <ul>
             {results.map(result => (
-              <li>{result.title}</li>
+              <Result
+                key={result.id}
+                movieId={result.id}
+                title={result.title}
+                set={set}
+                setSearch={setSearch}
+                setResults={setResults}
+              />
             ))}
           </ul>
         )}
