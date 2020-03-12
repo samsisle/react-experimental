@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  max-width: 46rem;
+  width: 46rem;
   border: 0.1rem solid #ebebeb;
   border-radius: 0.4rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -9,13 +9,16 @@
   outline: none;
   padding-left: 1.2rem;
   padding-right: 0.4rem;
-  transition: box-shadow 200ms ease-in;
-  width: 100%;
+  transition: box-shadow 200ms ease-in, width 200ms ease-in 0s;
 }
 
 .container:hover {
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1),
     0 0.4rem 1.2rem rgba(26, 26, 29, 0.08);
+}
+
+.expand {
+  width: 60rem;
 }
 
 .icon {
