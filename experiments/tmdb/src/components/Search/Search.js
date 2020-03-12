@@ -9,6 +9,7 @@ import css from './Search.module.css';
 export default function Search() {
   const [toggle, set] = useState(false);
   const [search, setSearch] = useState('');
+  const [results, setResults] = useState([]);
   const searchRef = useRef(null);
 
   const expandClassName = `${toggle ? ' ' : ''}${toggle ? css.expand : ''}`;
@@ -37,6 +38,12 @@ export default function Search() {
       const data = await fetch(
         `https://api.themoviedb.org/3/search/movie?language=en-US&query=${encodedQuery}&page=1&include_adult=false&region=US`
       );
+
+      if (data.results.length > 5) {
+        setResults(data.results.slice(0, 5));
+      } else {
+        setResults(data.results);
+      }
     }
 
     if (search.length > 0) {
@@ -62,9 +69,13 @@ export default function Search() {
         />
       </div>
       <div className={`${css.results}${visibleClassName}`}>
-        <ul>
-          <li>bruh!</li>
-        </ul>
+        {results.length > 0 && (
+          <ul>
+            {results.map(result => (
+              <li>{result.title}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
