@@ -20,15 +20,14 @@
   padding-right: 0.4rem;
 }
 
-.search:hover {
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1),
-    0 0.4rem 1.2rem rgba(26, 26, 29, 0.08);
-}
-
 .border {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
+.search:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1),
+    0 0.4rem 1.2rem rgba(26, 26, 29, 0.08);
+}
 .icon {
   padding-left: 0.5rem;
   padding-right: 1rem;
