@@ -1,0 +1,14 @@
+.result {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 6rem;
+}
+
+.result:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.title {
+  font-size: 1.8rem;
+}
