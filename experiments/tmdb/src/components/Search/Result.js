@@ -8,16 +8,18 @@ import css from './Result.module.css';
 export default function Result(props) {
   const navigate = useNavigate();
 
+  const { id, title } = props.result;
+
   function navigateToMoviePage() {
     props.setSearch('');
     props.set(false);
     props.setResults([]);
-    navigate(`/${props.movieId}/${formatTitle(props.title)}`);
+    navigate(`/${id}/${formatTitle(title)}`);
   }
 
   return (
     <li className={css.result} onClick={navigateToMoviePage}>
-      <div>{props.title}</div>
+      <div className={css.title}>{title}</div>
     </li>
   );
 }
