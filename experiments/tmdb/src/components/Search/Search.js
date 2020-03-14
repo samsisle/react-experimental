@@ -37,11 +37,11 @@ export default function Search() {
     async function fetchSearch(query) {
       const encodedQuery = query.replace(' ', '%20');
       const data = await fetch(
-        `https://api.themoviedb.org/3/search/movie?language=en-US&query=${encodedQuery}&page=1&include_adult=false&region=US`
+        `https://api.themoviedb.org/3/search/movie?language=en-US&query=${encodedQuery}&page=1&include_adult=false`
       );
 
-      if (data.results.length > 5) {
-        setResults(data.results.slice(0, 5));
+      if (data.results.length > 8) {
+        setResults(data.results.slice(0, 8));
       } else {
         setResults(data.results);
       }
@@ -69,22 +69,18 @@ export default function Search() {
           value={search}
         />
       </div>
-      <div className={`${css.results}${visibleClassName}`}>
-        {results.length > 0 && (
-          <ul>
-            {results.map(result => (
-              <Result
-                key={result.id}
-                movieId={result.id}
-                title={result.title}
-                set={set}
-                setSearch={setSearch}
-                setResults={setResults}
-              />
-            ))}
-          </ul>
-        )}
-      </div>
+      <ul className={`${css.results}${visibleClassName}`}>
+        {results.length > 0 &&
+          results.map(result => (
+            <Result
+              key={result.id}
+              result={result}
+              set={set}
+              setSearch={setSearch}
+              setResults={setResults}
+            />
+          ))}
+      </ul>
     </div>
   );
 }
