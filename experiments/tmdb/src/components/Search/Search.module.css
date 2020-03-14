@@ -53,7 +53,9 @@
   border-radius: 0rem 0rem 0.4rem 0.4rem;
   border-style: solid;
   border-width: 0.1rem;
-  height: 48rem;
+  max-height: 60rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
   top: 4.7rem;
   transition: background-color 200ms linear;
   visibility: hidden;
