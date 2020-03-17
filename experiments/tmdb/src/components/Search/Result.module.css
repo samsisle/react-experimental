@@ -3,6 +3,7 @@
   align-items: center;
   cursor: pointer;
   height: 6rem;
+  padding-left: 3.5rem;
 }
 
 .result:hover {

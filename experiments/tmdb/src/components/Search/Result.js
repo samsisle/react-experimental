@@ -11,8 +11,8 @@ export default function Result(props) {
   const { id, title } = props.result;
 
   function navigateToMoviePage() {
-    props.setSearch('');
     props.set(false);
+    props.setSearch('');
     props.setResults([]);
     navigate(`/${id}/${formatTitle(title)}`);
   }
