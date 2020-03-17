@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 
 import SearchIcon from './SearchIcon';
 import Result from './Result';
+import { Trending } from '../Trending';
 
 import fetch from '../../lib/fetch';
 
@@ -17,6 +18,10 @@ export default function Search() {
   const borderClassName = `${toggle ? ' ' : ''}${toggle ? css.border : ''}`;
   const visibleClassName = `${toggle ? ' ' : ''}${toggle ? css.visible : ''}`;
 
+  /**
+   * This effect handles "closing" our search results if the user clicks
+   * outside the search container.
+   */
   useEffect(() => {
     function handleClickOutside(e) {
       if (containerRef.current && containerRef.current.contains(e.target)) {
@@ -69,18 +74,29 @@ export default function Search() {
           value={search}
         />
       </div>
-      <ul className={`${css.results}${visibleClassName}`}>
-        {results.length > 0 &&
-          results.map(result => (
-            <Result
-              key={result.id}
-              result={result}
-              set={set}
-              setSearch={setSearch}
-              setResults={setResults}
-            />
-          ))}
-      </ul>
+      {toggle && (
+        <ul className={`${css.results}${visibleClassName}`}>
+          {results.length > 0 ? (
+            results.map(result => (
+              <Result
+                key={result.id}
+                result={result}
+                set={set}
+                setSearch={setSearch}
+                setResults={setResults}
+              />
+            ))
+          ) : (
+            <Suspense fallback={<div>loading...</div>}>
+              <Trending
+                set={set}
+                setSearch={setSearch}
+                setResults={setResults}
+              />
+            </Suspense>
+          )}
+        </ul>
+      )}
     </div>
   );
 }
