@@ -1,4 +1,23 @@
 .trending {
+  color: var(--secondary);
   font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 3.5rem;
   text-transform: uppercase;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 6rem;
+  padding-left: 3.5rem;
+}
+
+.result:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.title {
+  font-size: 1.8rem;
 }
