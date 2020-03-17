@@ -38,6 +38,10 @@ export default function Search() {
     };
   }, [containerRef]);
 
+  /**
+   * This effect will fetch our search data everytime the search state
+   * changes (search string must be greater than a length of 0).
+   */
   useEffect(() => {
     async function fetchSearch(query) {
       const encodedQuery = query.replace(' ', '%20');
