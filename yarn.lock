@@ -8667,14 +8667,14 @@ react-dev-utils@^10.2.1:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^0.0.0-experimental-d7382b6c4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-d7382b6c4.tgz#6cba67117c84e3d1f88dcc10a39d50ceb272ea7a"
-  integrity sha512-uSnfuGM9WGom0U2sW0n2Y0jxCAEpzF3/m5vy31bLaniMxl/PdDsj9pnh4TT6/lQF3TwFYDVNTJ0UtiIiksCzPQ==
+react-dom@^0.0.0-experimental-e5d06e34b:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-e5d06e34b.tgz#e90fd8a1f5ac18045798f276734feecdf107442e"
+  integrity sha512-E2jMRRCHs69jfI5YMnUEFEdWLv1FthDE52xDP67luRVGBU+Hc2xq06Eu+ukiHgCevgwAqBM4Q9HeYbQrcBvFdg==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.0.0-experimental-d7382b6c4"
+    scheduler "0.0.0-experimental-e5d06e34b"
 
 react-error-overlay@^6.0.7:
   version "6.0.7"
@@ -8762,7 +8762,7 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@^0.0.0-experimental-e5d06e34b:
+react@0.0.0-experimental-e5d06e34b:
   version "0.0.0-experimental-e5d06e34b"
   resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-e5d06e34b.tgz#bfdbe2b228e1d1967330fc18b9e05331818f610d"
   integrity sha512-2WUOtH5VE3cSyg22XxavfDoMQDIc51Pyudr/mrU1I1GcWIDKVg7QA/1dh5DlKyIvyWlM44pkwqz7V7gYHFzf2A==
@@ -9263,10 +9263,10 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-scheduler@0.0.0-experimental-d7382b6c4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-d7382b6c4.tgz#0570f316766efc448a731f9f5c809012797273a2"
-  integrity sha512-QSkiFsyZ8oGJWMq8dqiF9GlWxkgTvtCRUnwOPRMfpQowCowJMMr8jW8GZ7c81kXChM6gjNlLc3YWPKHB1F8MIw==
+scheduler@0.0.0-experimental-e5d06e34b:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-e5d06e34b.tgz#59a67c60b34c2c136b2f6d8daf9af74f91d97659"
+  integrity sha512-S4uANOeUKNI32GLMS28KvY7BHmtJL9Am3EsUB3WTr6Of5RNz1lEH0Qutc+j90GcgYM67l1qPOiO9sVLTdnTkxw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
