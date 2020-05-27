@@ -1,8 +1,0 @@
-{
-  "public": true,
-  "build": {
-    "env": {
-      "REACT_APP_TMDB_ACCESS_TOKEN": "@tmdb_access_token"
-    }
-  }
-}
