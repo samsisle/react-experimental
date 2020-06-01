@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^10.4.0",
+    "@testing-library/user-event": "^11.3.1",
     "history": "^5.0.0-beta.9",
     "prop-types": "^15.7.2",
     "react": "0.0.0-experimental-33c3af284",
