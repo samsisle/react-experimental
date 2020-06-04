@@ -10,7 +10,7 @@
     "prop-types": "^15.7.2",
     "react": "0.0.0-experimental-33c3af284",
     "react-dom": "0.0.0-experimental-e5d06e34b",
-    "react-router": "^6.0.0-alpha.5",
+    "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-alpha.5",
     "react-scripts": "3.4.1",
     "swr": "^0.2.3",
