@@ -20,7 +20,7 @@ import './index.css';
 
 // Opt-in concurrent mode with ReactDOM.createRoot
 const rootEl = document.getElementById('app');
-const root = ReactDOM.createRoot(rootEl);
+const root = ReactDOM.unstable_createRoot(rootEl);
 
 root.render(
   <StrictMode>
