@@ -1,5 +1,3 @@
-![Birds of Prey](https://image.tmdb.org/t/p/original/P70lB9FQ8cYvRFbxzqwZOexe7S.jpg)
-
 ###### Demo: [tmdb.now.sh](https://tmdb.now.sh)
 
 ## Installation
