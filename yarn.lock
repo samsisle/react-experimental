@@ -8622,7 +8622,7 @@ react-dev-utils@^10.2.1:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^0.0.0-experimental-3d0895557:
+react-dom@0.0.0-experimental-3d0895557:
   version "0.0.0-experimental-3d0895557"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-3d0895557.tgz#8fdb08f45c461fa38fbc8a4b458450abcd10910b"
   integrity sha512-rb88BTYlEfDbZ+1TlRKGDUflKGJWptlXKUv+4jI+LM91mr6idkWGf+3U92m7hb09aYvlHozt7slrGV3P5XuFGg==
@@ -8716,10 +8716,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@0.0.0-experimental-4c8c98ab9:
-  version "0.0.0-experimental-4c8c98ab9"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-4c8c98ab9.tgz#b25742c4a9fa2b7da117738c05b29960b660ee97"
-  integrity sha512-pqLXmUgWtpKJD/KM5o+NbEx1UPSaW53wRBgz3XndCahOCY0TwAAxu5CEOgayvgoTIiusLhJGO9z7fD6B/wuthA==
+react@^0.0.0-experimental-3d0895557:
+  version "0.0.0-experimental-3d0895557"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-3d0895557.tgz#0c6c95681bf93e023f74a5448f2261ba99b41c01"
+  integrity sha512-/5nwNTI6QypTthi9rRbf74i/ac6UTf3syRrgJpkzV52470aNlF+Qq6D6e7kFiPpcfh3A/V6vnMCPtmB/rNnElA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
