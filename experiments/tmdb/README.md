@@ -1,4 +1,4 @@
-###### Demo: [tmdb.now.sh](https://tmdb.now.sh)
+###### Demo: [tmdb.vercel.app](https://tmdb.vercel.app/)
 
 ## Installation
 
