@@ -12,7 +12,7 @@
     "react-dom": "0.0.0-experimental-3310209d0",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^4.0.3",
     "swr": "^0.3.11",
     "unfetch": "^4.2.0"
   },
