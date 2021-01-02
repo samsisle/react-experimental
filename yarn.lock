@@ -9199,10 +9199,10 @@ react-scripts@^4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
-react@0.0.0-experimental-3310209d0:
-  version "0.0.0-experimental-3310209d0"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-3310209d0.tgz#1421b0338fbb0c98bbe1ffcaaf88d101209d7194"
-  integrity sha512-TVDPZZ2rbxtbIlb3knyqXG1ij8veXpMTzxWmJC/+0POtKSE0HeUNVoQX8j0h0p0rHCKmAfT/mIZaoG9P0bJ+TA==
+react@^0.0.0-experimental-4190a3458:
+  version "0.0.0-experimental-4190a3458"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-4190a3458.tgz#7f3be065422480a24af2db6e36419cb4ef653e1b"
+  integrity sha512-Vz8Uyt/3/6tu4rGaqh2pXqNOs+oTMLuTMizqjWV+D/H0tQAHuOwepCNHoEHAOmcYOYk/keQYspoZ5iHOCKT0mA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
