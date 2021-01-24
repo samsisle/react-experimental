@@ -9,7 +9,7 @@
     "history": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "0.0.0-experimental-51ebccc37",
-    "react-dom": "0.0.0-experimental-4190a3458",
+    "react-dom": "0.0.0-experimental-51ebccc37",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^4.0.3",
