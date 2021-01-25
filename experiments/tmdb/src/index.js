@@ -13,20 +13,20 @@ import { SWRConfig } from 'swr';
 
 import App from './App';
 
-import fetch from './lib/fetch';
+import Fetch from './lib/fetch';
 import * as serviceWorker from './lib/serviceWorker';
 
 import './index.css';
 
 // Opt-in concurrent mode with ReactDOM.createRoot
 const rootEl = document.getElementById('app');
-const root = ReactDOM.unstable_createRoot(rootEl);
+const root = ReactDOM.createRoot(rootEl);
 
 root.render(
   <StrictMode>
     <SWRConfig
       value={{
-        fetcher: fetch
+        fetcher: Fetch
       }}
     >
       <Router timeout={1000}>
