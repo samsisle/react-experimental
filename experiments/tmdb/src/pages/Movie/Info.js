@@ -14,7 +14,6 @@ export default function Info() {
   const [certification, setCertfication] = useState('');
 
   const { movieId } = useContext(MovieContext);
-  const imgSrc = require(`../../lib/certifications/RATED_${certification}.svg`);
 
   const { data: releases } = useSwr(
     `https://api.themoviedb.org/3/movie/${movieId}/release_dates`,
@@ -47,7 +46,7 @@ export default function Info() {
           <span className={css.credits}>Rated</span>
           <img
             className={css.certification}
-            src={imgSrc}
+            src={`/certifications/RATED_${certification}.svg`}
             alt={`${certification} rating`}
           />
         </li>
